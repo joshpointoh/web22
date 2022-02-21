@@ -1,0 +1,38 @@
+
+body {
+  background-color: pink;
+}
+  p.mobile {
+  font-size: 32px;
+  font-family: 'Comic Sans MS';
+  font-wright: bold;
+  text-align: center;
+  margin-top: 40vh;
+}
+p.desktop {
+  font-size: 16px;
+  font-family: 'Comic Sans MS';
+  font-wright: bold;
+  text-align: center;
+  margin-top: 40vh;
+}
+
+@media screen and (max-width: 769px) {
+  p.mobile {
+    display: block;
+  }
+  p.desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+p.mobile {
+display: none;
+}
+p.desktop {
+display: block;
+}
